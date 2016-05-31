@@ -7,8 +7,7 @@ exports.init = function(){
         mongoose.connect('mongodb://localhost/sae-assignment');
 
         mongoose.connection.on('error', function(err){
-
-            console.log(err);
+            
             reject(err);
 
         });
